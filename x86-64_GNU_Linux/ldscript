@@ -1,0 +1,8 @@
+OUTPUT_ARCH(i386:x86-64)
+SECTIONS
+{
+  .text 0x0 : AT ( 0 ) {
+    *(.text)
+    *(.text*)
+  }
+}
